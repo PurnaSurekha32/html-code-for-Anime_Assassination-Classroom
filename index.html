@@ -1,4 +1,8 @@
-<!-- Create a registration page heading Registration after that name,emaiid,password,confirm password,phone number
+<!-- create an account <a href="register.html">signup</a>
+</p>
+
+login(buttton)
+goto task webpaCreate a registration page heading Registration after that name,emaiid,password,confirm password,phone number
 select your state (drop down), dob,address,gender,submit(register)
 message required
 should go to login page
@@ -7,11 +11,7 @@ username,enter password,forget password(achnor tag)
 don't have an account signup(redirct to register)
 
 <p>
-    Don't have an account <a href="register.html">signup</a>
-</p>
-
-login(buttton)
-goto task webpage. -->
+    Don't hage. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,58 +20,192 @@ goto task webpage. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
 </head>
+<style>
+    body{
+        background-image: url("https://m.media-amazon.com/images/I/81tshyeEXcL._AC_SX679_.jpg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size:cover;
+    }
+    .reg{
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 50px;
+        color:black;
+        font-weight: bold;
+    }
+
+    .form-container{
+        
+        margin: 50px auto;
+        width: 30%;
+        padding: 2% 4%;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    }
+
+    .form-group input{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-group{
+        margin-bottom: 20px;
+    }
+
+    .form-group input[type="radio"]{
+        width:5%;
+    }
+    
+
+    .sub{
+        text-align: center;
+        font-family: cursive;
+        font-size: 20px;
+        color:darkblue;
+        font-weight: bold;
+    }
+    .sub input[type="submit"] {
+    width: 130px; 
+    height: 40px; 
+    font-size: 18px; 
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    }
+    .n{
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .e{
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .p{
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .c{
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .po{
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .st{
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .db{
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .ad{
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .gn{
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+</style>
 <body>
-    <h1>Registration</h1>
-    <form action="login.html" method="get">
-    <p>Name <input required type="text" placeholder="Enter your name"/></p>
-    <p>EmailId <input required type="email" placeholder="Enter email id"/></p>
-    <p>Password <input required type="password" placeholder="Enter you secret key"/></p>
-    <p>Confirm Password <input required type="password" placeholder="confirm password"/></p>
-    <p>Mobile No <input required type="tel" placeholder="Enter your phone number"/></p>
-    <p>State 
-    <select required> 
-        <option value=""></option>
-        <option value="Andhra Pradesh">Andhra Pradesh</option>
-        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-        <option value="Assam">Assam</option>
-        <option value="Bihar">Bihar</option>
-        <option value="Chhattisgarh">Chhattisgarh</option>
-        <option value="Goa">Goa</option>
-        <option value="Gujarat">Gujarat</option>
-        <option value="Haryana">Haryana</option>
-        <option value="Himachal Pradesh">Himachal Pradesh</option>
-        <option value="Jharkhand">Jharkhand</option>
-        <option value="Karnataka">Karnataka</option>
-        <option value="Kerala">Kerala</option>
-        <option value="Madhya Pradesh">Madhya Pradesh</option>
-        <option value="Maharashtra">Maharashtra</option>
-        <option value="Manipur">Manipur</option>
-        <option value="Meghalaya">Meghalaya</option>
-        <option value="Mizoram">Mizoram</option>
-        <option value="Nagaland">Nagaland</option>
-        <option value="Odisha">Odisha</option>
-        <option value="Punjab">Punjab</option>
-        <option value="Rajasthan">Rajasthan</option>
-        <option value="Sikkim">Sikkim</option>
-        <option value="Tamil Nadu">Tamil Nadu</option>
-        <option value="Telangana">Telangana</option>
-        <option value="Tripura">Tripura</option>
-        <option value="Uttar Pradesh">Uttar Pradesh</option>
-        <option value="Uttarakhand">Uttarakhand</option>
-        <option value="West Bengal">West Bengal</option>
+    <form class="form-container" action="login.html" method="get">
+        <h3 class="reg">Registration</h3>
+        <div class="form-group">
+            <label class="n" for="">Name</label><br/>
+            <input name="name" required type="text" placeholder="Enter your name">    
+        </div>
+        
+        <div class="form-group">
+            <label class="e" for="">Email:</label><br/>
+            <input name="email" required type="email" placeholder="Enter email">    
+        </div>
 
+        <div class="form-group">
+            <label class="p" for="">Password:</label><br/>
+            <input name="password" required type="password" placeholder="Enter password"/>
+        </div>
 
-    </select>
-    </p>
-    <p>Date of Birth <input required type="date"/></p>
-    <p>Address<textarea name="address" placeholder="Enter the full address"></textarea></p>
-    <p>
-        <input required name="gender" value="female" type="radio"/> Female
-        <input required name="gender" value="male" type="radio"/> Male
-    </p>
-    <p>
-        <input required type="submit"/>
-    </p>
+        <div class="form-group">
+            <label class="c" for="">Confrim Password</label><br/>
+            <input name="password" required type="password" placeholder="confirm password"/>
+        </div>
+
+        <div class="form-group">
+            <label class="p0" for="">Mobile No</label><br/>
+            <input name="mobile no" required type="tel" placeholder="Enter your phone number"/>
+        </div>
+
+        <div class="form-group">
+            <label class="st" for="">State</label><br/>
+            <select required> 
+                <option value=""></option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+        
+        
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="db" for="">Date of Birth</label><br/>
+            <input required type="date" placeholder="Enter your phone number"/>
+        </div>
+
+        <div class="form-group">
+            <label class="ad" for="">Address</label><br/>
+            <textarea required name="address" placeholder="Enter the full address"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label class="gn" for="">Gender</label><br/>
+            <input required name="gender" value="female" type="radio"/> Female
+            <input required name="gender" value="male" type="radio"/> Male
+        </div>
+
+        <p class="sub">
+            <input  required type="submit"/>
+        </p>
     </form>
 </body>
 </html>
